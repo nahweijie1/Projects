@@ -62,7 +62,7 @@ Recommended states that the College Board might consider to focus resource alloc
 
 Resource allocation may be channeled into the following for maximal effectiveness: 
 1. Provision of SAT test subsidy.
-2. Setting up campaigns alongside test subsidies to highlight key strengths of SAT
+2. Emphasis on key strengths of SAT
 3. Improving accessibility for test takers
 
 
