@@ -2,7 +2,7 @@
 by: Nah Wei Jie
 
 ## Overview
-![images.png](/images/images.png)
+![images.png](../images/images.png)
 
 FairPrice's [**Share-A-Textbook**](https://www.fairprice.com.sg/wps/portal/fp/csr/SAT/FAQ) (formerly known as FairPrice Used Textbooks Project) is NTUC FairPrice’s signature community project that is held annually.
 First started in 1983 as the Used Textbooks Project, the project collects pre-loved textbooks and distributes them for free to needy students. The project was rebranded as FairPrice Share-A-Textbook in 2010.   
@@ -58,10 +58,10 @@ To alleviate mentioned pain points, we explored scraping posts from Reddit to se
 
 Analyses relating to excerpts were of utmost importance to us as they give us a gauge on how they can help our business problems.  
 
-![image2.png](/images/image2.png)
+![image2.png](../images/image2.png)
 From our analysis, the LifeAdvice subreddit tend to have longer character lengths and word counts in its posts with higher medians for both of them in a right-skewed distribution.
 
-![image3.png](/images/image3.png)
+![image3.png](../images/image3.png)
  The most common words ```just```,```like```,```don```,```really``` and ```know``` appear in both subreddits, there are also differentiating words which appear in one but not the other:
 - FanFiction:   ```Writing```, ```Character```, ```Story```
 - LifeAdvice:   ```Job```, ```Work```, ```Time```
@@ -72,7 +72,7 @@ Bigrams were also similar across subreddits, with ```feel like```, ```don know``
 
 We also observed that there is an imbalance of the most frequent words, which we tried to balance using `TF-IDF` vectorization.
 
-![image4.png](/images/image4.png)
+![image4.png](../images/image4.png)
 
 **Modelling (Classification Model)**
 
@@ -85,10 +85,10 @@ The ```Spacy```( library stopwords list has more stopwords compared to ```NLTK``
 To decide which library to leverage on for lemmatization, we timed the performance of both ```Spacy``` and ```Wordnet``` in lemmatization. We have selected ```Spacy``` as it was twice as fast.
 
 After performing train test split, we ran our training data through 4 sets of pipelines which used `TF-IDF` vectorization coupled with a model. Models used for training were `Logistic Regression`, `Multinomial Naive Bayes`, `K-Nearest Neighbours` as well as `Random Forest Classifier`.   
-![image5.png](/images/image5.png)
+![image5.png](../images/image5.png)
 As we are most interested in the decreasing the number of false negatives of our classifier in predicting the subreddit a given post belongs to, we want to look at the models that have high sensitivity scores (`Multinomial Naive Bayes`). 
 
-![image6.png](/images/image6.png)
+![image6.png](../images/image6.png)
 
 Another benefit of selecting the `Multinomial Naive Bayes` model allows us to iterate in a more intuitive manner as we are able to see the impact of each feature (words) as it specifies coefficients to each word, and use such analyses to further improve our model. 
   
