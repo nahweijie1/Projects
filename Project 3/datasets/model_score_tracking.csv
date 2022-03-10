@@ -1,0 +1,6 @@
+Model Name,GS Best Score,Train Score,Test Score,ROC-AUC Score,Sensitivity,Specificity
+tvec_lr,0.959,0.983,0.963,0.993,0.963,0.963
+tvec_nb,0.962,0.977,0.951,0.994,0.98,0.923
+tvec_rfc,0.916,0.93,0.905,0.975,0.85,0.96
+tvec_knn,0.914,0.945,0.895,0.953,0.966,0.825
+tvec_lr_new,NA,0.9767441860465116,0.9526226734348562,0.994,0.986,0.919
